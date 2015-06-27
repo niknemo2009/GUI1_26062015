@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "5.2.1.0.138" Java: "1.8.0_25" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp panel1:::::x, seq l {comp panel2:::p::p, par l {seq {space s:::p, comp panel3:::::p}, seq l {space :p:57:p, comp scrollPane1:::p:119:p, space s:::p, comp comboBox1_users:::p:138:p}}}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {comp panel2:::p::p, seq {comp panel3:::::p, space s:::p, par l {comp comboBox1_users:::p::p, comp scrollPane1:::p::p}}}, space ::84:x, comp panel1:::p::p}}"
+		} ) {
+			name: "this"
+			"title": "Форма 1"
+			"background": new java.awt.Color( 51, 255, 0, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:17:p, comp button1_add:::p::p, space :p:35:p, comp button2_delete:::p::p, space :p:30:p, comp button3_update:::p::p, space ::333:x}}"
+				"$verticalGroup": "par l {seq l {space ::27:x, par b {comp button1_add::b:p::p, comp button2_delete::b:p::p, comp button3_update::b:p::p}}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( null, "Панель управления", 4, 0, new java.awt.Font( "Dialog", 1, 14 ), sfield java.awt.Color magenta )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1_add"
+					"text": "add"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1_addActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2_delete"
+					"text": "delete"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3_update"
+					"text": "update"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {par l {seq {space :::x, par l {comp label1:::p:81:p, comp label2:::p:81:p}, space :::p}, seq l {space :::p, comp label3:::p:81:p, space :::x}}, par t:::p {comp textField3_name::t::152:x, comp textField4_emeil::t:::x, comp textField5_telefon::t:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :p:16:p, par b {comp textField3_name::b:p::p, comp label1::b:p::p}, space u:::p, par b {comp textField4_emeil::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp textField5_telefon::b:p::p, comp label3::b:p::p}, space ::35:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3_name"
+					"toolTipText": "вававававававава"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4_emeil"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField5_telefon"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Имя"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Емейл"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Телефон"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:323:x}"
+				"$verticalGroup": "par l {space :0:0:x}"
+			} ) {
+				name: "panel3"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "spisokUsers1"
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "spisokUsers1ValueChanged", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1_users"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 650, 370 )
+		} )
+	}
+}
